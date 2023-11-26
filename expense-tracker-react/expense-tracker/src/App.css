@@ -1,0 +1,281 @@
+#root {
+  width:100%;
+  padding: 2rem;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+body{
+  width: 100%;
+}
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.links{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  padding: 30px 15px;
+}
+.month{
+  border-radius: 10px;
+}
+
+.linkContainer{
+  height: 100%;
+  margin-left:-20px;
+  position: fixed;
+  left: 50px;
+  top: 90px;
+  background-color: black;
+  top: 60px;
+}
+.linkContainer ul{
+  list-style: none;
+  text-decoration: none;
+}
+.linkContainer ul li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+
+.set{
+  margin-top:200px;
+}
+.logout{
+  text-decoration: none;
+  color: black;
+}
+.bar{
+width: 30px;
+height:100%;
+border: 2px solid black;
+}
+.row{
+  width: 100%;
+}
+.link{
+  margin-left: 170px;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  overflow-y: scroll;
+  height: 100vh;
+ 
+}
+.link::-webkit-scrollbar{
+  width:0px;
+}
+.appbar{
+  position:fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+.cont{
+  width: 100%;
+}
+.accounts{
+  margin-left: -10px;
+  height: 100vh;
+  padding: 5px;
+  width: 170px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+  position: relative;
+  border-right: 1px solid grey;
+}
+.accounts ul{
+  list-style: none;
+}
+.bank{
+  width: 100%;
+  border: 2px solid black;
+}
+.wk, .days{
+  list-style: none;
+}
+.days li{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.active{
+  background-color: blue;
+  color: white;
+}
+.cal{
+  display: flex;
+  align-items: center;
+}
+.items{
+  list-style: none;
+}
+.items li{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.item{
+  display: flex;
+  align-items: center;
+  gap:10px
+}
+.mexpe, .mexp{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.creds{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.login, .signup{
+  border-radius: 10px;
+  padding: 5px;
+}
+.img{
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.dai{
+  margin-left: -60px;
+  width: 500px;
+}
+.mon{
+  margin-left: 200px;
+}
+.th{
+  width: 300px;
+}
+.bugdet{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.all{
+  width: 100%;
+}
+.tr{
+  width:350px;
+  position: relative;
+  height: 100vh;
+}
+.tr form{
+  position: absolute;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 5px 5px 5px 5px grey;
+  margin-left:20px;
+  width: 500px;
+  padding: 30px;
+  margin-top: -150px;
+}
+.another{
+  cursor: pointer;
+}
+.accountForm{
+  position: absolute;
+  margin-top: -90px;
+  box-shadow: 5px 5px 5px 5px grey;
+  background-color: white;
+  width: 250px;
+  place-items: center;
+  z-index: 10;
+}
+.tit{
+  margin-left: -30px;
+  border: 2px solid black;
+  width: 100px;
+}
+.more{
+  cursor: pointer;
+}
+.mini{
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.expen{
+  border-radius: 5px;
+  width: 50px;
+}
+.traBtn{
+  border-radius: 50%;
+  cursor: pointer;
+}
+.money{
+  font-weight: bold;
+}
+.cover{
+  border-bottom: 1px solid grey;
+  border-top:1px solid grey ;
+}
+.check{
+  appearance: none;
+  width: 60px;
+  height: 30px;
+  background-color: #4b4b4b;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.check::before{
+  content:"";
+  height: 20px;
+  width: 20px;
+  border-radius: inherit;
+  background-color:#8c8c8c;
+  top:50%;
+  left: 5px;
+  transform: translateY(-50%);
+  position: absolute;
+  transition: all 0.3s ease;
+}
+.check:checked::before{
+  left:35px;
+  background-color: #fff;
+}
+.activeLink{
+  background-color:rgba(250, 200, 255, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+.catExpense{
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loginForm{
+  margin-top: -300px;
+}
